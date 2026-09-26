@@ -18,15 +18,18 @@
         <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#services">Services</a><a href="#contact">Contact</a><a href="assets/DikshaSasane.pdf" download>Resume</a>
       </div>
       <a class="nav-cta" href="mailto:dikshasasane23@gmail.com">Let's talk <span>↗</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero container">
       <div class="hero-copy">
-        <div class="eyebrow"><span class="dot"></span> JAVA BACKEND DEVELOPER   <span class="dot"></span>WEB DEVELOPER <span class="dot"></span>Freelancer</div>
+        <div class="eyebrow"><span class="dot"></span> JAVA BACKEND DEVELOPER · WEB DEVELOPER</div>
         <h1>Building reliable<br><em>digital experiences.</em></h1>
-        <p class="hero-text">I'm Diksha — I build clean, reliable web applications and backend systems, Having 2 Plus years of production experience in enterprise banking software and Internal project</p>
+        <p class="hero-text">I’m Diksha, a Java backend developer with production experience in enterprise banking and a foundation in modern web development.</p>
         <div class="hero-actions">
           <a class="btn primary" href="#projects">View my work <span>↓</span></a>
           <a class="btn secondary" href="https://github.com/diksharsasane" target="_blank" rel="noreferrer">GitHub ↗</a>
@@ -62,7 +65,7 @@
 
     <section id="experience" class="section dark-section"><div class="container"><div class="section-kicker light">02 — EXPERIENCE</div><h2>Where I’ve <span>built.</span></h2>
       <div class="timeline">
-        <article class="timeline-item"><div class="time">SEP 2024 — PRESENT<br><b>PUNE, INDIA</b></div><div class="role"><h3>Software Engineer <span>· Tech Mahindra</span></h3><p class="company-note">Client engagement: Finastra · Enterprise banking & cash management (HDFC Client)</p><ul><li>Build backend enhancements using Java, Spring Framework, Oracle, SQL and PL/SQL for transaction processing and cash management workflows.</li><li>Design and enhance RESTful APIs across requirement analysis, development, testing and deployment support.</li><li>Analyse production defects, debug backend code/logs and deliver production and UAT fixes.</li><li>Implement transaction validations, enrichment logic and business rules; optimized SQL/backend logic with an observed ~20% API response-time improvement.</li></ul></div></article>
+        <article class="timeline-item"><div class="time">SEP 2024 — PRESENT<br><b>PUNE, INDIA</b></div><div class="role"><h3>Software Engineer <span>· Tech Mahindra</span></h3><p class="company-note">Client engagement: Finastra · Enterprise banking & cash management</p><ul><li>Build backend enhancements using Java, Spring Framework, Oracle, SQL and PL/SQL for transaction processing and cash management workflows.</li><li>Design and enhance RESTful APIs across requirement analysis, development, testing and deployment support.</li><li>Analyse production defects, debug backend code/logs and deliver production and UAT fixes.</li><li>Implement transaction validations, enrichment logic and business rules; optimized SQL/backend logic with an observed ~20% API response-time improvement.</li></ul></div></article>
         <article class="timeline-item"><div class="time">JAN 2024 — JUN 2024<br><b>BANER, PUNE</b></div><div class="role"><h3>Web Developer Intern <span>· Posit Source Technologies</span></h3><ul><li>Developed a Leave Portal enterprise application with React.js + Redux.</li><li>Worked on role-based authentication and dashboard workflows.</li></ul></div></article>
         <article class="timeline-item"><div class="time">MAY 2023 — AUG 2023<br><b>REMOTE</b></div><div class="role"><h3>Java Developer Intern <span>· Codemind Technologies</span></h3><ul><li>Created enterprise applications using Spring Boot and Hibernate and developed RESTful APIs.</li><li>Integrated MySQL with JPA and designed JSP-based UI components using MVC architecture.</li></ul></div></article>
       </div>
@@ -83,9 +86,25 @@
 
     <section class="section container skills"><div class="section-kicker">05 — TOOLKIT</div><div class="skill-cloud"><span>Java</span><span>Spring Boot</span><span>Spring MVC</span><span>REST APIs</span><span>Hibernate</span><span>JPA</span><span>Oracle</span><span>SQL</span><span>PL/SQL</span><span>MySQL</span><span>JavaScript</span><span>React.js</span><span>JSP</span><span>HTML</span><span>CSS</span><span>jQuery</span><span>Git</span><span>Maven</span><span>Postman</span><span>Jenkins</span><span>Docker</span></div></section>
 
-    <section id="contact" class="contact-section"><div class="container contact-inner"><div><div class="section-kicker light">06 — CONTACT</div><h2>Have a project<br>in mind?</h2><p>Let’s discuss the requirement, scope and the right technical approach.</p></div><div class="contact-links"><a href="mailto:dikshasasane23@gmail.com"><small>EMAIL</small><span>dikshasasane23@gmail.com ↗</span></a><a href="https://www.linkedin.com/in/dikshasasane/" target="_blank" rel="noreferrer"><small>LINKEDIN</small><span>linkedin.com/in/dikshasasane ↗</span></a><a href="https://github.com/diksharsasane" target="_blank" rel="noreferrer"><small>GITHUB</small><span>github.com/diksharsasane ↗</span></a><a><small>MOBILE No</small><span>7083803507</span></a></div></div></section>
+    <section id="contact" class="contact-section"><div class="container contact-inner"><div><div class="section-kicker light">06 — CONTACT</div><h2>Have a project<br>in mind?</h2><p>Let’s discuss the requirement, scope and the right technical approach.</p></div><div class="contact-links"><a href="mailto:dikshasasane23@gmail.com"><small>EMAIL</small><span>dikshasasane23@gmail.com ↗</span></a><a href="https://www.linkedin.com/in/dikshasasane/" target="_blank" rel="noreferrer"><small>LINKEDIN</small><span>linkedin.com/in/dikshasasane ↗</span></a><a href="https://github.com/diksharsasane" target="_blank" rel="noreferrer"><small>GITHUB</small><span>github.com/diksharsasane ↗</span></a></div></div></section>
   </main>
-  <footer class="footer container"><span>© <span id="year"></span> Diksha Sasane</span><span>Diksha Sasane — Software Engineer</span></footer>
+  <footer class="footer container"><span>© <span id="year"></span> Diksha Sasane</span><span>Designed & built as a lightweight static portfolio.</span></footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.classList.toggle('active', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
 </body>
 </html>
